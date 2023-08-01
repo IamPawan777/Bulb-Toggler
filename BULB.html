@@ -1,0 +1,39 @@
+<html>
+	<head>
+<title>switchOn & switchOff</title>
+	</head>
+		
+		<style>
+	button{
+	padding:10px;
+	margin:40px;
+	background-color:green;
+		}
+		</style>
+		
+		<script>
+			function light(value)
+			{
+			var pic;
+				if(value==1)
+				pic="pic2.jpg";
+				else
+				pic="pic.jpg";
+				
+				document.getElementById('bulb').src=pic;
+			}
+		</script>
+	
+	<body>
+		<div style=" display: flex;  justify-content: center; align-items: center; ">
+			<img src="pic2.jpg"  height="550px" width="340px"id="bulb">
+		</div>
+		<div style=" display: flex;  justify-content: center; align-items: center; ">
+			<button onClick="light()">TURN ON</button>
+			<button onClick="light(1)">TURN OFF</button>
+		</div>
+
+	
+	</body>
+	
+</html>
